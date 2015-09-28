@@ -1,0 +1,23 @@
+{
+  "name": "fertiliser",
+  "version": "0.0.0",
+  "description": "Fertiliser app",
+  "main": "server.js",
+  "author": "Woden Business Solutions",
+  "dependencies": {
+    "async": "~0.2.8",
+    "bluebird": "^2.10.1",
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.12.3",
+    "express-force-ssl": "^0.3.0",
+    "express-session": "^1.11.3",
+    "mongoose": "^4.1.8",
+    "req-flash": "0.0.2",
+    "socket.io": "~0.9.14"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+}

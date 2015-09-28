@@ -1,0 +1,46 @@
+<% layout( 'layouts/main.ejs') -%>
+    <div class="container bottom20">
+        <div class="row">
+            <h3>Enter Mix Ratio and Price</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <form name="calculate" id="calculate" method="POST" action="/calc">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="na">Nitrogen</label>
+                                    <input type="text" class="form-control input-lg" id="nitrogen" name="nitrogen" placeholder="Nitrogen">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="pa">Phosphorus</label>
+                                    <input type="text" class="form-control input-lg" id="phosphorus" name="phosphorus" placeholder="Phosphorus">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="ka">Pot Ash</label>
+                                    <input type="text" class="form-control input-lg" id="potash" name="potash" placeholder="Pot Ash">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="pricea">Price</label>
+                                    <input type="text" class="form-control input-lg" id="pricea" name="pricea" placeholder="Price">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-center" style="font-size: 20px;" id="expected">Based on current price setting the cost of this mix should be <span style="font-weight: bold;" id="finalprice"></span></p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block btn-lg">Display Value</button>
+                    </form>
+                    <button type="button" class="btn btn-primary btn-block btn-lg" id="settings">Settings</button>
+                    <button type="button" class="btn btn-warning btn-block btn-lg" id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
